@@ -1,0 +1,24 @@
+{
+    "colourPalette": [
+        {
+            "name": "Rich Black FOGRA 29",
+            "hex": "#040F0F"
+        },
+        {
+            "name": "Forest Green Web",
+            "hex": "#248232"
+        },
+        {
+            "name": "Green Pantone",
+            "hex": "#2BA84A"
+        },
+        {
+            "name": "Outer Space Crayola",
+            "hex": "#2D3A3A"
+        },
+        {
+            "name": "Baby Powder",
+            "hex": "#FCFFFC"
+        }
+    ]
+}
