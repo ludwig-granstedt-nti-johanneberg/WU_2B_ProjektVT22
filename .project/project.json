@@ -20,5 +20,10 @@
             "name": "Baby Powder",
             "hex": "#FCFFFC"
         }
+    ],
+    "metaClasses": [
+        "active",
+        "animated",
+        "reversed"
     ]
 }

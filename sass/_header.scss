@@ -4,27 +4,8 @@ $green: #2BA84A;
 $grey: #2D3A3A;
 $white: #FCFFFC;
 
-@keyframes openmenu {
-    0% {
-        width: 50px;
-        height: 46px;
-        background-color: $darkGreen;
-        border: 1px solid $black;
-    }
-
-    30% {
-        width: 184px;
-        height: 46px;
-    }
-
-    100% {
-        background-color: $darkGreen;
-        border: 1px solid $black;
-        width: 184px;
-        height: 282px;
-    }
-}
-
+@use "header/menu-button";
+@use "header/menu";
 
 header {
     h1 {
@@ -32,70 +13,6 @@ header {
         /* Font is displaying weird: look into */
         font-family: 'Roboto Light', sans-serif;
         size: 36px;
-    }
-    
-    #menu-button {
-        .burger-component {
-            width: 40px;
-            height: 7px;
-            border-radius: 10px;
-    
-            background-color: $white;
-            box-shadow: 0px 4px 4px rgba(black, 0.5);
-        }
-    
-        position: absolute;
-        top: 20px;
-        right: 18px;
-        z-index: 2;
-    
-        width: 40px;
-        height: 36px;
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    menu {
-        * {
-            display: none;
-        }
-
-        position: absolute;
-        top: 15px;
-        right: 13px;
-
-        width: 50px;
-        height: 46px;
-        padding: 0px;
-
-        border-radius: 10px;
-    }
-
-    menu:hover {
-        background-color: $darkGreen;
-        border: 1px solid $black;
-    }
-
-    menu.animated {
-        animation: openmenu 0.5s ease-in-out;
-    }
-
-    menu.reversed {
-        animation-direction: reverse;
-    }
-
-    menu.active {
-        // li {
-        //     display: list-item;
-        // }
-
-        width: 184px;
-        height: 282px;
-
-        background-color: $darkGreen;
-        border: 1px solid $black;
     }
 
     position: absolute;

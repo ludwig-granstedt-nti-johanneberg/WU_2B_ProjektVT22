@@ -21,18 +21,23 @@
 		"prefix": "header",
 		"body": [
 			"<header>",
-			"\t<img src=\"img/logo.png\" alt=\"logo\">",
 			"\t<h1>Ludegra</h1>",
 			"\t<nav>",
-			"\t\t<menu>",
-			"\t\t\t<li class=\"nav-links\"><a href=\"\">Subpage 1</a></li>",
-			"\t\t\t<li class=\"nav-links\"><a href=\"\">Subpage 2</a></li>",
-			"\t\t\t<li class=\"nav-links\"><a href=\"\">Subpage 3</a></li>",
-			"\t\t\t<li class=\"nav-links\"><a href=\"\">Subpage 4</a></li>",
-			"\t\t\t<li class=\"nav-links\"><a href=\"\">Subpage 5</a></li>",
+			"\t\t<div id=\"menu-button\" class=\"reversed\">",
+			"\t\t\t<div id=\"burger\">",
+			"\t\t\t\t<div class=\"burger-component\" id=\"burger-component1\"></div>",
+			"\t\t\t\t<div class=\"burger-component\" id=\"burger-component2\"></div>",
+			"\t\t\t\t<div class=\"burger-component\" id=\"burger-component3\"></div>",
+			"\t\t\t</div>",
+			"\t\t</div>",
+			"\t\t<menu id=\"main-menu\" class=\"reversed\">",
+			"\t\t\t<li class=\"nav-links\"><a href=\"index.html\">Hem</a></li>",
+			"\t\t\t<li class=\"nav-links\"><a href=\"\">Om mig</a></li>",
+			"\t\t\t<li class=\"nav-links\"><a href=\"\">Mitt arbete</a></li>",
+			"\t\t\t<li class=\"nav-links\"><a href=\"\">Kontakta mig</a></li>",
 			"\t\t</menu>",
 			"\t</nav>",
-			"</header>"
+			"</header>",
 		]
 	}
 }
