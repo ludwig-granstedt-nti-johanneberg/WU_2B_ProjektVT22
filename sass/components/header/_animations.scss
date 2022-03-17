@@ -1,0 +1,55 @@
+@use "../../abstracts" as *;
+
+@keyframes open-menu {
+    0% {
+        width: 50px;
+        height: 46px;
+        background-color: $darkGreen;
+        border: 1px solid $black;
+    }
+
+    30% {
+        width: 184px;
+        height: 46px;
+    }
+
+    100% {
+        background-color: $darkGreen;
+        border: 1px solid $black;
+        width: 184px;
+        height: 282px;
+    }
+}
+
+@keyframes menu-button-top-on-pressed {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(14.5px) rotate(-0.125turn);
+        
+    }
+}
+
+@keyframes menu-button-middle-on-pressed {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(580px);
+        
+    }
+}
+
+@keyframes menu-button-bottom-on-pressed {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-14.5px) rotate(0.125turn);
+        
+    }
+}

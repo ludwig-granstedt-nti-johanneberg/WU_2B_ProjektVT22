@@ -22,7 +22,7 @@ if (menuButton) {
 
         menuButton.classList.toggle("active");
         menuButton.classList.toggle("reversed");
-        playAnimation(menuButton, 1000);
+        playAnimation(menuButton, 250);
     });
 }
 

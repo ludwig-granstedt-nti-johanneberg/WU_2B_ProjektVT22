@@ -1,15 +1,5 @@
-$black: #040F0f;
-$darkGreen: #248232;
-$green: #2BA84A;
-$grey: #2D3A3A;
-$white: #FCFFFC;
-
-@use 'header';
-
-@font-face {
-    font-family: 'Roboto Light';
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-}
+@use "./abstracts" as *;
+@use 'components/header';
 
 * {
     margin: 0px;

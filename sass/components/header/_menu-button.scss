@@ -1,41 +1,5 @@
-$black: #040f0f;
-$darkGreen: #248232;
-$green: #2ba84a;
-$grey: #2d3a3a;
-$white: #fcfffc;
-
-@keyframes menu-button-top-on-pressed {
-    0% {
-        transform: translateY(0) rotate(0deg);
-    }
-
-    100% {
-        transform: translateY(14.5px) rotate(-0.125turn);
-        
-    }
-}
-
-@keyframes menu-button-middle-on-pressed {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(580px);
-        
-    }
-}
-
-@keyframes menu-button-bottom-on-pressed {
-    0% {
-        transform: translateY(0) rotate(0deg);
-    }
-
-    100% {
-        transform: translateY(-14.5px) rotate(0.125turn);
-        
-    }
-}
+@use "../../abstracts" as *;
+@use "./animations";
 
 #menu-button {
     #burger {
