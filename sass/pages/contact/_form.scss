@@ -1,0 +1,65 @@
+@use '../../abstracts' as *;
+
+form#contact-form {
+    div.input-container {
+        margin-top: 8px;
+    }
+    label {
+        display: block;
+    }
+    input, textarea {
+        &:focus {
+            outline: none;
+        }
+
+        &#message-field {
+            height: 178px;
+        }
+
+        &#title-field {
+            height: 32px;
+        }
+
+        &#email-field {
+            height: 24px;
+        }
+
+        width: 100%;
+        border-radius: 5px;
+        border: 0px;
+
+        color: $black;
+        background-color: $white;
+
+        box-shadow: inset 0px 4px 4px 0px rgba(black, 0.5);
+
+        display: block;
+    }
+    button {
+        &:focus {
+            box-shadow: none;
+        }
+
+        width: 131px;
+        height: 57px;
+
+        margin-top: 39px;
+        align-self: center;
+
+        border: none;
+        border-radius: 5px;
+
+        background-color: $green;
+        box-shadow: 0px 4px 4px 0px rgba(black, 0.5);
+
+        color: $white;
+        @include font($openSans, $regular, 24px);
+    }
+
+    width: calc(100vw - 40px);
+    margin-top: 39px;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+}

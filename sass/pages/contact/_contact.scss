@@ -1,0 +1,33 @@
+section {
+    margin-top: 42px;
+}
+
+section#contact-info {
+    h2 {
+        align-self: center;
+    }
+
+    display: flex;
+    flex-direction: column;
+}
+
+dl#contact-details {
+    dt {
+        margin-top: 8px;
+    }
+    margin-left: 20px;
+}
+
+section#contact-me {
+    h2 {
+        align-self: center;
+    }
+    p {
+        width: calc(100vw - 40px);
+        margin-top: 8px;
+        align-self: center;
+    }
+
+    display: flex;
+    flex-direction: column;
+}

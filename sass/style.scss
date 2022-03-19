@@ -1,5 +1,7 @@
 @use "./abstracts" as *;
-@use 'components/header';
+@use './text-stylings';
+@use './components/header';
+@use './pages';
 
 * {
     margin: 0px;
@@ -7,5 +9,7 @@
 }
 
 body {
+    padding-top: header.$headerHeight;
+    padding-bottom: 40px;
     background-color: $grey;
 }

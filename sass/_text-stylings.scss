@@ -1,0 +1,37 @@
+@use "./abstracts" as *;
+
+h1 {
+    color: $white;
+    @include font($roboto, $light, 36px);
+}
+
+h2 {
+    color: $white;
+    @include font($openSans, $light, 36px);
+}
+
+h3 {
+    color: $white;
+    @include font($openSans, $regular, 24px);
+}
+
+p {
+    color: $white;
+    @include font($openSans, $regular, 18px);
+}
+
+a {
+    color: $white;
+}
+
+dt {
+    @extend p;
+}
+
+dd {
+    @extend p;
+}
+
+label {
+    @extend p;
+}

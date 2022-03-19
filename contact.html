@@ -1,34 +1,93 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Kontakt | Ludegra</title>
-</head>
-<body>
-    <header>
-        <h1>Ludegra</h1>
-        <nav>
-            <div id="menu-button" class="reversed">
-                <div id="burger">
-                    <div class="burger-component" id="burger-component1"></div>
-                    <div class="burger-component" id="burger-component2"></div>
-                    <div class="burger-component" id="burger-component3"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Kontakt | Ludegra</title>
+    </head>
+    <body>
+        <header>
+            <h1>Ludegra</h1>
+            <nav>
+                <div id="menu-button" class="reversed">
+                    <div id="burger">
+                        <div
+                            class="burger-component"
+                            id="burger-component1"
+                        ></div>
+                        <div
+                            class="burger-component"
+                            id="burger-component2"
+                        ></div>
+                        <div
+                            class="burger-component"
+                            id="burger-component3"
+                        ></div>
+                    </div>
                 </div>
-            </div>
-            <menu id="main-menu" class="reversed">
-                <li class="nav-links"><a href="index.html">Hem</a></li>
-                <li class="nav-links"><a href="about.html">Om mig</a></li>
-                <li class="nav-links"><a href="work.html">Mitt arbete</a></li>
-                <li class="nav-links"><a href="contact.html">Kontakta mig</a></li>
-            </menu>
-        </nav>
-    </header>
+                <menu id="main-menu" class="reversed">
+                    <li class="nav-links"><a href="index.html">Hem</a></li>
+                    <li class="nav-links"><a href="about.html">Om mig</a></li>
+                    <li class="nav-links">
+                        <a href="work.html">Mitt arbete</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="contact.html" id="current-page"
+                            >Kontakta mig</a
+                        >
+                    </li>
+                </menu>
+            </nav>
+        </header>
+        <main>
+            <section aria-labelledby="contact-info-heading" id="contact-info">
+                <h2 id="contact-info-heading">Kontatkinformation</h2>
+                <dl id="contact-details">
+                    <dt>E-postadress</dt>
+                    <dd>
+                        <a href="mailto:contact@ludegra.com">
+                            contact@ludegra.com
+                        </a>
+                    </dd>
+                    <dt>GitHub</dt>
+                    <dd><a href="https://github.com/ludegra">ludegra</a></dd>
+                    <dt>LinkedIn</dt>
+                    <dd>
+                        <a
+                            href="https://www.linkedin.com/in/ludwig-granstedt-788a51207/"
+                        >
+                            Ludwig Granstedt
+                        </a>
+                    </dd>
+                </dl>
+            </section>
+            <section aria-labelledby="contact-me-heading" id="contact-me">
+                <h2 id="contact-me-heading">Kontakta mig</h2>
+                <p>
+                    Jag nås som lättast via e-post, men kan även kontaktas genom
+                    formuläret nedan.
+                </p>
 
-    <form action="">
-        <input type="text" name="title" id="title-field">
-    </form>
-</body>
+                <form action="" id="contact-form">
+                    <div class="input-container" id="title-input">
+                        <label for="title-field">Titel</label>
+                        <input type="text" id="title-field" required />
+                    </div>
+                    <div class="input-container" id="message-input">
+                        <label for="message-field">Meddelande</label>
+                        <textarea id="message-field" required></textarea>
+                    </div>
+                    <div class="input-container" id="email-input">
+                        <label for="email-field">E-postadress</label>
+                        <input type="email" id="email-field" required />
+                    </div>
+                    <button type="submit" id="send-button">Skicka</button>
+                </form>
+            </section>
+        </main>
+
+        <script src="js/index.js"></script>
+    </body>
 </html>

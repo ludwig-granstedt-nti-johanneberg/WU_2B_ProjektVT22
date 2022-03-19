@@ -1,13 +1,41 @@
-@font-face {
-  font-family: "Roboto Light";
-  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300&display=swap");
+h1 {
+  color: #fcfffc;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
 }
+
+h2 {
+  color: #fcfffc;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+}
+
+h3 {
+  color: #fcfffc;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+p, label, dd, dt {
+  color: #fcfffc;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+a {
+  color: #fcfffc;
+}
+
 @keyframes open-menu {
   0% {
     width: 50px;
     height: 46px;
     background-color: #248232;
-    border: 1px solid #040f0f;
   }
   30% {
     width: 184px;
@@ -15,7 +43,6 @@
   }
   100% {
     background-color: #248232;
-    border: 1px solid #040f0f;
     width: 184px;
     height: 282px;
   }
@@ -97,7 +124,6 @@
 
 #menu-button:hover {
   background-color: #248232;
-  border: 1px solid #040f0f;
 }
 
 menu {
@@ -107,6 +133,7 @@ menu {
   width: 50px;
   height: 46px;
   padding: 0px;
+  overflow: hidden;
   border-radius: 10px;
 }
 menu * {
@@ -114,6 +141,24 @@ menu * {
 }
 menu li {
   list-style: none;
+}
+menu a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #040f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+menu a:hover {
+  background-color: rgba(252, 255, 252, 0.25);
+}
+menu a#current-page {
+  text-decoration: underline;
 }
 
 menu.animated {
@@ -129,7 +174,6 @@ menu.active {
   height: 282px;
   padding-top: 46px;
   background-color: #248232;
-  border: 1px solid #040f0f;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -139,29 +183,101 @@ menu.active li {
   height: 100%;
   display: list-item;
 }
-menu.active a {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 header {
-  position: absolute;
+  position: fixed;
+  top: 0px;
   width: 100vw;
   height: 76px;
   background-color: #2ba84a;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
   padding-left: 11px;
   display: flex;
   align-items: center;
 }
-header h1 {
+
+section {
+  margin-top: 42px;
+}
+
+section#contact-info {
+  display: flex;
+  flex-direction: column;
+}
+section#contact-info h2 {
+  align-self: center;
+}
+
+dl#contact-details {
+  margin-left: 20px;
+}
+dl#contact-details dt {
+  margin-top: 8px;
+}
+
+section#contact-me {
+  display: flex;
+  flex-direction: column;
+}
+section#contact-me h2 {
+  align-self: center;
+}
+section#contact-me p {
+  width: calc(100vw - 40px);
+  margin-top: 8px;
+  align-self: center;
+}
+
+form#contact-form {
+  width: calc(100vw - 40px);
+  margin-top: 39px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+form#contact-form div.input-container {
+  margin-top: 8px;
+}
+form#contact-form label {
+  display: block;
+}
+form#contact-form input, form#contact-form textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 0px;
+  color: #040f0f;
+  background-color: #fcfffc;
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  display: block;
+}
+form#contact-form input:focus, form#contact-form textarea:focus {
+  outline: none;
+}
+form#contact-form input#message-field, form#contact-form textarea#message-field {
+  height: 178px;
+}
+form#contact-form input#title-field, form#contact-form textarea#title-field {
+  height: 32px;
+}
+form#contact-form input#email-field, form#contact-form textarea#email-field {
+  height: 24px;
+}
+form#contact-form button {
+  width: 131px;
+  height: 57px;
+  margin-top: 39px;
+  align-self: center;
+  border: none;
+  border-radius: 5px;
+  background-color: #2ba84a;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
   color: #fcfffc;
-  /* Font is displaying weird: look into */
-  font-family: "Roboto Light", sans-serif;
-  size: 36px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+form#contact-form button:focus {
+  box-shadow: none;
 }
 
 * {
@@ -170,6 +286,8 @@ header h1 {
 }
 
 body {
+  padding-top: 76px;
+  padding-bottom: 40px;
   background-color: #2d3a3a;
 }
 
