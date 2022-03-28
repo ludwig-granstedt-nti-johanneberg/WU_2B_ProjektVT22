@@ -1,0 +1,14 @@
+main#about-me-main {
+    & > section {
+        margin-top: 42px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        align-self: center;
+    }
+
+    padding: 0px 20px;
+}

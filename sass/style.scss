@@ -9,7 +9,9 @@
 }
 
 body {
+    height: auto;
+
     padding-top: header.$headerHeight;
-    padding-bottom: 40px;
+    padding-bottom: $paddingBottom;
     background-color: $grey;
 }

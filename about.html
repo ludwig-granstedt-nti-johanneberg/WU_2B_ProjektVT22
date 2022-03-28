@@ -1,30 +1,83 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om mig | Ludegra</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Ludegra</h1>
-        <nav>
-            <div id="menu-button" class="reversed">
-                <div id="burger">
-                    <div class="burger-component" id="burger-component1"></div>
-                    <div class="burger-component" id="burger-component2"></div>
-                    <div class="burger-component" id="burger-component3"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Om mig | Ludegra</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Ludegra</h1>
+            <nav>
+                <div id="menu-button" class="reversed">
+                    <div id="burger">
+                        <div
+                            class="burger-component"
+                            id="burger-component1"
+                        ></div>
+                        <div
+                            class="burger-component"
+                            id="burger-component2"
+                        ></div>
+                        <div
+                            class="burger-component"
+                            id="burger-component3"
+                        ></div>
+                    </div>
                 </div>
-            </div>
-            <menu id="main-menu" class="reversed">
-                <li class="nav-links"><a href="index.html">Hem</a></li>
-                <li class="nav-links"><a href="">Om mig</a></li>
-                <li class="nav-links"><a href="">Mitt arbete</a></li>
-                <li class="nav-links"><a href="">Kontakta mig</a></li>
-            </menu>
-        </nav>
-    </header>
-</body>
+                <menu id="main-menu" class="reversed">
+                    <li class="nav-links">
+                        <a href="index.html" id="current-page">Hem</a>
+                    </li>
+                    <li class="nav-links"><a href="about.html">Om mig</a></li>
+                    <li class="nav-links">
+                        <a href="work.html">Mitt arbete</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="contact.html">Kontakta mig</a>
+                    </li>
+                </menu>
+            </nav>
+        </header>
+
+        <main id="about-me-main">
+            <section id="introduction" aria-label="introduction">
+                <h2 id="about-me-heading">Om mig</h2>
+                <p id="about-me-summary">
+                    Jag är en självlärd programvaruutvecklare från Göteborg.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Viverra nam libero justo laoreet.
+                </p>
+            </section>
+            <section id="education" aria-labelledby="education-heading">
+                <h2 id="education-heading">Min utbildning</h2>
+                <section
+                    class="education-section"
+                    id="nti-section"
+                    aria-labelledby="nti-heading"
+                >
+                    <h3 id="nti-heading">NTI Gymnasiet Johanneberg</h3>
+                    <img
+                        src="img/NTI.jpg"
+                        alt="Logga för NTI Gymnasiet"
+                        id="nti-logo"
+                    />
+                    <p id="nti-description">
+                        NTI Gymnasiet Johanneberg adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Viverra nam libero justo laoreet. Molestie at
+                        elementum eu facilisis sed odio morbi quis commodo.
+                        Fringilla ut morbi tincidunt augue interdum velit
+                        euismod. Aliquam etiam erat velit scelerisque in.
+                        Sagittis nisl rhoncus mattis rhoncus.
+                    </p>
+                </section>
+            </section>
+        </main>
+
+        <script src="js/index.js"></script>
+    </body>
 </html>

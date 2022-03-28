@@ -196,33 +196,71 @@ header {
   align-items: center;
 }
 
-section {
+main#index-main {
+  height: calc(100vh - 76px - 40px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section#hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img#photo {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+p#hero-summary {
+  width: 216px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+main#about-me-main {
+  padding: 0px 20px;
+}
+main#about-me-main > section {
+  margin-top: 42px;
+  display: flex;
+  flex-direction: column;
+}
+main#about-me-main h2 {
+  align-self: center;
+}
+
+main#contact-main section {
   margin-top: 42px;
 }
-
-section#contact-info {
+main#contact-main section#contact-info {
   display: flex;
   flex-direction: column;
 }
-section#contact-info h2 {
+main#contact-main section#contact-info h2 {
   align-self: center;
 }
-
-dl#contact-details {
+main#contact-main dl#contact-details {
   margin-left: 20px;
 }
-dl#contact-details dt {
+main#contact-main dl#contact-details dt {
   margin-top: 8px;
 }
-
-section#contact-me {
+main#contact-main section#contact-me {
   display: flex;
   flex-direction: column;
 }
-section#contact-me h2 {
+main#contact-main section#contact-me h2 {
   align-self: center;
 }
-section#contact-me p {
+main#contact-main section#contact-me p {
   width: calc(100vw - 40px);
   margin-top: 8px;
   align-self: center;
@@ -286,6 +324,7 @@ form#contact-form button:focus {
 }
 
 body {
+  height: auto;
   padding-top: 76px;
   padding-bottom: 40px;
   background-color: #2d3a3a;
