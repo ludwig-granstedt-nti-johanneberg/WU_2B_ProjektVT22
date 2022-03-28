@@ -318,6 +318,17 @@ form#contact-form button:focus {
   box-shadow: none;
 }
 
+main#work-main {
+  padding-top: 42px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2#work-heading {
+  align-self: center;
+  margin-bottom: 8px;
+}
+
 * {
   margin: 0px;
   box-sizing: border-box;
