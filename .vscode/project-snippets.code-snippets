@@ -39,5 +39,27 @@
 			"\t</nav>",
 			"</header>",
 		]
+	},
+	"School Article": {
+		"scope": "html",
+		"prefix": "school",
+		"body": [
+			"<article",
+			"\tclass=\"school\"",
+			"\tid=\"nti-section\"",
+			"\taria-labelledby=\"$2\"",
+			">",
+			"\t<h3 id=\"$2\">${1:school name}</h3>",
+			"\t<img",
+			"\t\tsrc=\"$3\"",
+			"\t\talt=\"${4:image description}\"",
+			"\t\twidth=\"172\"",
+			"\t\theight=\"172\"",
+			"\t/>",
+			"\t<p>",
+			"\t\t$0",
+			"\t</p>",
+			"</article>"
+		]
 	}
 }

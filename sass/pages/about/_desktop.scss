@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {
+    main#about-me-main {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 1fr;
+        column-gap: 5px;
+    
+        grid-template-areas:
+            "sum edu"
+        ;
+    }
+
+    article.school {
+        h3 {
+            margin-bottom: 10px;
+        }
+        img {
+            float: left;
+            margin-right: 15px;
+        }
+
+        display: block;
+        margin-bottom: 22px;
+    }
+}
+
+section#intruduction {
+    grid-area: sum;
+}
+
+section#education {
+    grid-area: edu;
+}

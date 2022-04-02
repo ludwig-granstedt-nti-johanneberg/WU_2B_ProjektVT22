@@ -20,5 +20,18 @@ if (menuButton) {
         playAnimation(menuButton, 250);
     });
 }
+function resize() {
+    if (window.innerWidth >= 768) {
+        if (menu) {
+            menu.classList.remove("active");
+            menu.classList.add("reversed");
+        }
+        if (menuButton) {
+            menuButton.classList.remove("active");
+            menuButton.classList.add("reversed");
+        }
+    }
+}
+window.onresize = resize;
 window.onload = function () { };
 //# sourceMappingURL=index.js.map

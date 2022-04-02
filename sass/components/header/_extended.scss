@@ -11,19 +11,26 @@
 
     menu {
         li {
-            width: 130px;
+            width: auto;
             height: 100%;
+
 
             display: list-item;
         }
 
         a {
+            padding: 0px 15px;
             color: $white;
             font-size: 24px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        width: 130px * 4;
-        flex-direction: row-reverse;
+        width: auto;
+        display: flex;
+        flex-direction: row;
         justify-content: flex-start;
         border-radius: 0px;
 

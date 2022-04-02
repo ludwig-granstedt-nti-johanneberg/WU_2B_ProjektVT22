@@ -1,0 +1,41 @@
+main#about-me-main {
+    & > section {
+        margin-top: 42px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        align-self: center;
+        text-align: center;
+    }
+
+    padding: 0px 20px;
+}
+
+section#education {
+    display: flex;
+    flex-direction: column;
+}
+
+article.school {
+    h3 {
+        align-self: center;
+        text-align: center;
+    }
+
+    img {
+        width: 172px;
+        height: auto;
+
+        align-self: center;
+        margin: 8px;
+    }
+
+    margin-top: 8px;
+    margin-bottom: 22px;
+
+    display: flex;
+    flex-direction: column;
+}
