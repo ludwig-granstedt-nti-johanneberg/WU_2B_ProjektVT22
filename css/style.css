@@ -7,6 +7,7 @@ h1 {
 }
 
 h2 {
+  text-align: center;
   color: #fcfffc;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -184,6 +185,31 @@ menu.active li {
   display: list-item;
 }
 
+@media screen and (min-width: 768px) {
+  nav {
+    width: 100%;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  menu {
+    width: 520px;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    border-radius: 0px;
+  }
+  menu li {
+    width: 130px;
+    height: 100%;
+    display: list-item;
+  }
+  menu a {
+    color: #fcfffc;
+    font-size: 24px;
+  }
+}
 header {
   position: fixed;
   top: 0px;
@@ -212,7 +238,7 @@ section#hero-container {
 }
 
 img#photo {
-  width: 60vw;
+  width: 216px;
   height: auto;
   margin-bottom: 15px;
   border-radius: 20px;
@@ -235,6 +261,28 @@ main#about-me-main > section {
 }
 main#about-me-main h2 {
   align-self: center;
+  text-align: center;
+}
+
+section#education {
+  display: flex;
+  flex-direction: column;
+}
+
+section.education-section {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+}
+section.education-section h3 {
+  align-self: center;
+  text-align: center;
+}
+section.education-section img#nti-logo {
+  width: 172px;
+  height: auto;
+  align-self: center;
+  margin: 8px;
 }
 
 main#contact-main section {
@@ -320,8 +368,26 @@ form#contact-form button:focus {
 
 main#work-main {
   padding-top: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   flex-direction: column;
+}
+main#work-main article {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+}
+main#work-main article h3 {
+  align-self: center;
+}
+main#work-main article img {
+  margin: 8px;
+  align-self: center;
+}
+
+p#github-referense {
+  margin-top: 22px;
 }
 
 h2#work-heading {
@@ -339,6 +405,11 @@ body {
   padding-top: 76px;
   padding-bottom: 40px;
   background-color: #2d3a3a;
+}
+
+img {
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */

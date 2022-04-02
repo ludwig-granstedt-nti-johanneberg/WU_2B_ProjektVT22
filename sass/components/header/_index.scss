@@ -1,6 +1,7 @@
 @use "../../abstracts" as *;
 @forward "menu-button";
 @forward "menu";
+@forward "./extended";
 
 $headerHeight: 76px;
 

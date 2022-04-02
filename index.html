@@ -1,41 +1,71 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ludegra</title>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Ludegra</h1>
-        <nav>
-            <div id="menu-button" class="reversed">
-                <div id="burger">
-                    <div class="burger-component" id="burger-component1"></div>
-                    <div class="burger-component" id="burger-component2"></div>
-                    <div class="burger-component" id="burger-component3"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Portfoliosida för Ludwig Granstedt">
+        <title>ludegra</title>
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="css/style.css" />
+        <style>
+            body {
+                background-color: #2d3a3a;
+                color: #FCFFFC;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Ludegra</h1>
+            <nav>
+                <div id="menu-button" class="reversed">
+                    <div id="burger">
+                        <div
+                            class="burger-component"
+                            id="burger-component1"
+                        ></div>
+                        <div
+                            class="burger-component"
+                            id="burger-component2"
+                        ></div>
+                        <div
+                            class="burger-component"
+                            id="burger-component3"
+                        ></div>
+                    </div>
                 </div>
-            </div>
-            <menu id="main-menu" class="reversed">
-                <li class="nav-links"><a href="index.html" id="current-page">Hem</a></li>
-                <li class="nav-links"><a href="about.html">Om mig</a></li>
-                <li class="nav-links"><a href="work.html">Mitt arbete</a></li>
-                <li class="nav-links"><a href="contact.html">Kontakta mig</a></li>
-            </menu>
-        </nav>
-    </header>
+                <menu id="main-menu" class="reversed">
+                    <li class="nav-links">
+                        <a href="index.html" id="current-page">Hem</a>
+                    </li>
+                    <li class="nav-links"><a href="about.html">Om mig</a></li>
+                    <li class="nav-links">
+                        <a href="work.html">Mitt arbete</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="contact.html">Kontakta mig</a>
+                    </li>
+                </menu>
+            </nav>
+        </header>
 
-    <main id="index-main">
-        <section id="hero-container" aria-label="hero">
-            <img src="img/sexy.jpg" alt="Picture of me" id="photo">
-            <h2 id="name">Ludwig Granstedt</h2>
-            <p id="hero-summary">Hobbyist developer and linguistics enthusiast</p>
-        </section>
-    </main>
+        <main id="index-main">
+            <section id="hero-container" aria-label="hero">
+                <img
+                    src="img/sexy.jpg"
+                    alt="Picture of me"
+                    id="photo"
+                    width="216"
+                    height="288"
+                />
+                <h2 id="name">Ludwig Granstedt</h2>
+                <p id="hero-summary">
+                    Hobbyist developer and linguistics enthusiast
+                </p>
+            </section>
+        </main>
 
-    <script src="js/index.js"></script>
-</body>
+        <script src="js/index.js"></script>
+    </body>
 </html>

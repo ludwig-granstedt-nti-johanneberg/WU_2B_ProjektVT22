@@ -8,7 +8,33 @@ main#about-me-main {
 
     h2 {
         align-self: center;
+        text-align: center;
     }
 
     padding: 0px 20px;
+}
+
+section#education {
+    display: flex;
+    flex-direction: column;
+}
+
+section.education-section {
+    h3 {
+        align-self: center;
+        text-align: center;
+    }
+
+    img#nti-logo {
+        width: 172px;
+        height: auto;
+
+        align-self: center;
+        margin: 8px;
+    }
+
+    margin-top: 8px;
+
+    display: flex;
+    flex-direction: column;
 }
