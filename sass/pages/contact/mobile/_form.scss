@@ -1,4 +1,4 @@
-@use '../../abstracts' as *;
+@use '../../../abstracts' as *;
 
 form#contact-form {
     div.input-container {
@@ -21,7 +21,7 @@ form#contact-form {
         }
 
         &#email-field {
-            height: 24px;
+            height: 32px;
         }
 
         width: 100%;

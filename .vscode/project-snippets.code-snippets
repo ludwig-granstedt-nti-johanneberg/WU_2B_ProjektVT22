@@ -1,65 +1,84 @@
 {
-	// Place your Obszar roboczy WU_2B_ProjektVT22 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
-	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
-	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
-	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
-	// Placeholders with the same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"scope": "javascript,typescript",
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
+    // Place your Obszar roboczy WU_2B_ProjektVT22 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+    // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+    // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+    // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+    // Placeholders with the same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"scope": "javascript,typescript",
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // }
 
-	"Header": {
-		"scope": "html",
-		"prefix": "header",
-		"body": [
-			"<header>",
-			"\t<h1>Ludegra</h1>",
-			"\t<nav>",
-			"\t\t<div id=\"menu-button\" class=\"reversed\">",
-			"\t\t\t<div id=\"burger\">",
-			"\t\t\t\t<div class=\"burger-component\" id=\"burger-component1\"></div>",
-			"\t\t\t\t<div class=\"burger-component\" id=\"burger-component2\"></div>",
-			"\t\t\t\t<div class=\"burger-component\" id=\"burger-component3\"></div>",
-			"\t\t\t</div>",
-			"\t\t</div>",
-			"\t\t<menu id=\"main-menu\" class=\"reversed\">",
-			"\t\t\t<li class=\"nav-links\"><a href=\"index.html\">Hem</a></li>",
-			"\t\t\t<li class=\"nav-links\"><a href=\"about.html\">Om mig</a></li>",
-			"\t\t\t<li class=\"nav-links\"><a href=\"work.html\">Mitt arbete</a></li>",
-			"\t\t\t<li class=\"nav-links\"><a href=\"contact.html\">Kontakta mig</a></li>",
-			"\t\t</menu>",
-			"\t</nav>",
-			"</header>",
-		]
-	},
-	"School Article": {
-		"scope": "html",
-		"prefix": "school",
-		"body": [
-			"<article",
-			"\tclass=\"school\"",
-			"\tid=\"nti-section\"",
-			"\taria-labelledby=\"$2\"",
-			">",
-			"\t<h3 id=\"$2\">${1:school name}</h3>",
-			"\t<img",
-			"\t\tsrc=\"$3\"",
-			"\t\talt=\"${4:image description}\"",
-			"\t\twidth=\"172\"",
-			"\t\theight=\"172\"",
-			"\t/>",
-			"\t<p>",
-			"\t\t$0",
-			"\t</p>",
-			"</article>"
-		]
-	}
+    "Header": {
+        "scope": "html",
+        "prefix": "header",
+        "body": [
+            "<header>",
+            "\t<h1>Ludegra</h1>",
+            "\t<nav>",
+            "\t\t<div id=\"menu-button\" class=\"reversed\">",
+            "\t\t\t<div id=\"burger\">",
+            "\t\t\t\t<div class=\"burger-component\" id=\"burger-component1\"></div>",
+            "\t\t\t\t<div class=\"burger-component\" id=\"burger-component2\"></div>",
+            "\t\t\t\t<div class=\"burger-component\" id=\"burger-component3\"></div>",
+            "\t\t\t</div>",
+            "\t\t</div>",
+            "\t\t<menu id=\"main-menu\" class=\"reversed\">",
+            "\t\t\t<li class=\"nav-links\"><a href=\"index.html\">Hem</a></li>",
+            "\t\t\t<li class=\"nav-links\"><a href=\"about.html\">Om mig</a></li>",
+            "\t\t\t<li class=\"nav-links\"><a href=\"work.html\">Mitt arbete</a></li>",
+            "\t\t\t<li class=\"nav-links\"><a href=\"contact.html\">Kontakta mig</a></li>",
+            "\t\t</menu>",
+            "\t</nav>",
+            "</header>"
+        ]
+    },
+    "School Article": {
+        "scope": "html",
+        "prefix": "school",
+        "body": [
+            "<article",
+            "\tclass=\"school\"",
+            "\taria-labelledby=\"$2\"",
+            ">",
+            "\t<h3 id=\"$2\">${1:school name}</h3>",
+            "\t<img",
+            "\t\tsrc=\"$3\"",
+            "\t\talt=\"${4:image description}\"",
+            "\t\twidth=\"172\"",
+            "\t\theight=\"172\"",
+            "\t/>",
+            "\t<p>",
+            "\t\t$0",
+            "\t</p>",
+            "</article>"
+        ]
+    },
+    "Work Article": {
+        "scope": "html",
+        "prefix": "work",
+        "body": [
+            "<article",
+            "\tclass=\"work-article\"",
+            ">",
+            "\t<h3 id=\"$2\">${1:project name}</h3>",
+            "\t<img",
+            "\t\tsrc=\"$3\"",
+            "\t\talt=\"${4:image description}\"",
+            "\t\twidth=\"172\"",
+            "\t\theight=\"172\"",
+            "\t/>",
+            "\t<p>",
+            "\t\t$0",
+            "\t</p>",
+            "</article>"
+        ]
+    }
 }

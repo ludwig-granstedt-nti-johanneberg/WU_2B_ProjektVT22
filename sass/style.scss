@@ -14,6 +14,8 @@ body {
     padding-top: header.$headerHeight;
     padding-bottom: $paddingBottom;
     background-color: $grey;
+
+    overflow-x: hidden;
 }
 
 img {

@@ -1,13 +1,25 @@
+@use "../../abstracts" as *;
+@use "../../components/header";
+
 @media screen and (min-width: 768px) {
     main#about-me-main {
-        display: grid;
-        grid-template-columns: 2fr 3fr;
-        grid-template-rows: 1fr;
-        column-gap: 5px;
-    
-        grid-template-areas:
-            "sum edu"
-        ;
+        padding-left: $asideWidth + 20px;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    aside#introduction {
+        height: calc(100vh - header.$headerHeight);
+        width: $asideWidth;
+        padding: 20px;
+        background-color: $darkGreen;
+
+        position: fixed;
+        left: 0px;
+        top: header.$headerHeight;
+        
+        box-shadow: 4px 0px 4px rgba(black, 0.5);
     }
 
     article.school {
@@ -22,10 +34,6 @@
         display: block;
         margin-bottom: 22px;
     }
-}
-
-section#intruduction {
-    grid-area: sum;
 }
 
 section#education {

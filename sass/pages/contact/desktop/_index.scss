@@ -1,0 +1,35 @@
+@forward './form';
+@use '../../../abstracts' as *;
+@use '../../../components/header';
+
+@media screen and (min-width: 768px) {
+    aside#contact-info {
+        height: calc(100vh - header.$headerHeight);
+        width: $asideWidth;
+        padding: 20px;
+        background-color: $darkGreen;
+
+        position: fixed;
+        left: 0px;
+        top: header.$headerHeight;
+        
+        box-shadow: 4px 0px 4px rgba(black, 0.5);
+    }
+
+    main#contact-main {
+        section#contact-me {
+            p {
+                width: 100%;
+            }
+            width: 676px;
+            height: 666px;
+        }
+
+        padding-left: $asideWidth;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}

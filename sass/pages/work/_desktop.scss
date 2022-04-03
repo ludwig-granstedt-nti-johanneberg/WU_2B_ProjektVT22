@@ -1,3 +1,37 @@
+@use '../../abstracts' as *;
+@use '../../components/header';
+
 @media screen and (min-width: 768px) {
-    
+    main#work-main {
+        padding-left: $asideWidth + 20px;
+    }
+
+    aside#work-introduction {
+        height: calc(100vh - header.$headerHeight);
+        width: $asideWidth;
+        padding: 20px;
+        background-color: $darkGreen;
+
+        position: fixed;
+        left: 0px;
+        top: header.$headerHeight;
+        
+        box-shadow: 4px 0px 4px rgba(black, 0.5);
+    }
+
+    section#work-projects {
+        width: calc(100vw - $asideWidth);
+
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    article.work-article {
+        min-width: 350px;
+        max-width: 400px;
+        margin-right: 20px;
+    }
 }
