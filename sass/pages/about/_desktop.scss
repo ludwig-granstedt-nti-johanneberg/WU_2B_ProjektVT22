@@ -10,6 +10,10 @@
     }
 
     aside#introduction {
+        h3 {
+            align-self: center;
+        }
+
         height: calc(100vh - header.$headerHeight);
         width: $asideWidth;
         padding: 20px;

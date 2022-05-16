@@ -269,10 +269,23 @@ main#about-me-main h2 {
   align-self: center;
   text-align: center;
 }
+main#about-me-main h3 {
+  align-self: center;
+  text-align: center;
+}
 
 section#education {
   display: flex;
   flex-direction: column;
+}
+
+aside#introduction {
+  width: 100vw;
+  padding: 20px;
+  position: relative;
+  left: -20px;
+  background-color: #248232;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 article.school {
@@ -280,10 +293,6 @@ article.school {
   margin-bottom: 22px;
   display: flex;
   flex-direction: column;
-}
-article.school h3 {
-  align-self: center;
-  text-align: center;
 }
 article.school img {
   width: 172px;
@@ -308,6 +317,9 @@ article.school img {
     left: 0px;
     top: 76px;
     box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.5);
+  }
+  aside#introduction h3 {
+    align-self: center;
   }
 
   article.school {
