@@ -27,6 +27,26 @@ section#education {
 }
 
 aside#introduction {
+    & > * {
+        margin-top: 5px;
+    }
+
+    h3 {
+        margin-top: 10px;
+    }
+
+    dt {
+        &::after {
+            content: " – ";
+        }
+
+        display: inline-block;
+    }
+
+    dd {
+        display: inline-block;
+    }
+
     width: 100vw;
     padding: 20px;
 

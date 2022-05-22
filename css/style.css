@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300&display=swap");
 h1 {
   color: #fcfffc;
@@ -286,6 +287,21 @@ aside#introduction {
   left: -20px;
   background-color: #248232;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+aside#introduction > * {
+  margin-top: 5px;
+}
+aside#introduction h3 {
+  margin-top: 10px;
+}
+aside#introduction dt {
+  display: inline-block;
+}
+aside#introduction dt::after {
+  content: " – ";
+}
+aside#introduction dd {
+  display: inline-block;
 }
 
 article.school {
