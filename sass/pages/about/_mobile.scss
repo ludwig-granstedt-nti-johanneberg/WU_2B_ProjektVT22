@@ -38,13 +38,21 @@ aside#introduction {
 }
 
 article.school {
-
     img {
         width: 172px;
         height: auto;
 
         align-self: center;
         margin: 8px;
+    }
+
+    h4 {
+        align-self: center;
+        text-align: center;
+    }
+
+    & > * {
+        margin-bottom: 10px;
     }
 
     margin-top: 8px;
