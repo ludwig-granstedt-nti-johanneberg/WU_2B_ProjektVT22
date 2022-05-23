@@ -1,23 +1,24 @@
 main#work-main {
-    article {
-        h3 {
-            align-self: center;
-        }
-
-        img {
-            margin: 8px;
-            align-self: center;
-        }
-
-        margin-top: 22px;
-
-        display: flex;
-        flex-direction: column;
-    }
 
     padding-top: 42px;
     padding-left: 20px;
     padding-right: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+article.work-article {
+    h3 {
+        align-self: center;
+    }
+
+    img {
+        margin: 8px;
+        align-self: center;
+    }
+
+    margin-top: 40px;
 
     display: flex;
     flex-direction: column;

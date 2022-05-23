@@ -21,6 +21,11 @@ h4 {
     @include font($openSans, $regular, 24px);
 }
 
+h5 {
+    color: $white;
+    @include font($openSans, $regular, 20px);
+}
+
 p {
     color: $white;
     @include font($openSans, $regular, 18px);

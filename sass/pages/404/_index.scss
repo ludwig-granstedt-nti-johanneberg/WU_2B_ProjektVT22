@@ -1,0 +1,12 @@
+@use "../../components/header";
+@use "../../abstracts" as *;
+
+main#four-o-four-main {
+    height: calc(100vh - header.$headerHeight - $paddingBottom);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}

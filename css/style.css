@@ -29,6 +29,13 @@ h4 {
   font-size: 24px;
 }
 
+h5 {
+  color: #fcfffc;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
 p, label, dd, dt {
   color: #fcfffc;
   font-family: "Open Sans", sans-serif;
@@ -312,6 +319,8 @@ aside#introduction dd {
 }
 
 article.school {
+  max-width: 1024px;
+  align-self: center;
   margin-top: 8px;
   margin-bottom: 22px;
   display: flex;
@@ -352,6 +361,10 @@ article.school > * {
     align-self: center;
   }
 
+  section#education {
+    width: calc(100vw - 400px);
+  }
+
   article.school {
     display: block;
     margin-bottom: 22px;
@@ -363,11 +376,11 @@ article.school > * {
     float: left;
     margin-right: 15px;
   }
+  article.school .school-logo-offset {
+    min-height: 188px;
+    flex-direction: row;
+  }
 }
-section#education {
-  grid-area: edu;
-}
-
 form#contact-form {
   width: calc(100vw - 40px);
   margin-top: 39px;
@@ -517,15 +530,16 @@ main#work-main {
   display: flex;
   flex-direction: column;
 }
-main#work-main article {
-  margin-top: 22px;
+
+article.work-article {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
 }
-main#work-main article h3 {
+article.work-article h3 {
   align-self: center;
 }
-main#work-main article img {
+article.work-article img {
   margin: 8px;
   align-self: center;
 }
@@ -576,6 +590,14 @@ img#robot-arm-image {
     margin-right: 20px;
   }
 }
+main#four-o-four-main {
+  height: calc(100vh - 76px - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0px;
   box-sizing: border-box;

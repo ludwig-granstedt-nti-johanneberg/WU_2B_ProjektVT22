@@ -22,24 +22,31 @@
         position: fixed;
         left: 0px;
         top: header.$headerHeight;
-        
+
         box-shadow: 4px 0px 4px rgba(black, 0.5);
+    }
+
+    section#education {
+        width: calc(100vw - $asideWidth);
     }
 
     article.school {
         h3 {
             margin-bottom: 10px;
         }
+
         img {
             float: left;
             margin-right: 15px;
         }
 
+        .school-logo-offset {
+            min-height: 188px;
+
+            flex-direction: row;
+        }
+
         display: block;
         margin-bottom: 22px;
     }
-}
-
-section#education {
-    grid-area: edu;
 }
