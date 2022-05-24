@@ -72,6 +72,15 @@ article.school {
         text-align: center;
     }
 
+    dt {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    dd {
+        margin-bottom: 22px;
+    }
+
     & > * {
         margin-bottom: 10px;
     }

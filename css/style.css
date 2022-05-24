@@ -336,6 +336,13 @@ article.school h4 {
   align-self: center;
   text-align: center;
 }
+article.school dt {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+article.school dd {
+  margin-bottom: 22px;
+}
 article.school > * {
   margin-bottom: 10px;
 }
