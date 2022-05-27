@@ -32,7 +32,7 @@ p {
 }
 
 a {
-    color: inherit;
+    @extend p;    
 }
 
 dt {

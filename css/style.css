@@ -36,15 +36,11 @@ h5 {
   font-size: 20px;
 }
 
-p, label, dd, dt {
+p, label, dd, dt, a {
   color: #fcfffc;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
-}
-
-a {
-  color: inherit;
 }
 
 @keyframes open-menu {
@@ -543,12 +539,33 @@ article.work-article {
   display: flex;
   flex-direction: column;
 }
-article.work-article h3 {
+article.work-article h3, article.work-article h4 {
   align-self: center;
+}
+article.work-article h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 article.work-article img {
   margin: 8px;
   align-self: center;
+}
+article.work-article dt, article.work-article dd {
+  display: inline-block;
+}
+article.work-article dt::after {
+  content: " – ";
+}
+article.work-article a.project-link {
+  margin-top: 20px;
+  display: block;
+  align-self: flex-end;
+}
+article.work-article .list-container {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 7px;
 }
 
 p#github-referense {
@@ -586,9 +603,9 @@ img#robot-arm-image {
     width: calc(100vw - 400px);
     display: flex;
     flex-direction: row;
-    flex-flow: wrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   article.work-article {
@@ -603,6 +620,7 @@ main#four-o-four-main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 * {

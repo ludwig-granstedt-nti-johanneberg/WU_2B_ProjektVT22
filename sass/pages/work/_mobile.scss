@@ -9,13 +9,40 @@ main#work-main {
 }
 
 article.work-article {
-    h3 {
+    h3, h4 {
         align-self: center;
+    }
+
+    h4 {
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     img {
         margin: 8px;
         align-self: center;
+    }
+
+    dt, dd {
+        display: inline-block;
+    }
+
+    dt::after {
+        content: " – ";
+    }
+
+    a.project-link {
+        margin-top: 20px;
+        display: block;
+        align-self: flex-end;
+    }
+
+    .list-container {
+        margin-bottom: 10px;
+
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 7px;
     }
 
     margin-top: 40px;
