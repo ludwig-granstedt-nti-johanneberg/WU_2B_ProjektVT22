@@ -1,5 +1,36 @@
 @use '../../../abstracts' as *;
 
+input, textarea {
+    &:focus {
+        outline: none;
+    }
+
+    border-radius: 5px;
+    border: 0px;
+
+    color: $black;
+    background-color: $white;
+
+    box-shadow: inset 0px 4px 4px 0px rgba(black, 0.5);
+
+    display: block;
+}
+
+button {
+    &:focus {
+        box-shadow: none;
+    }
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: $green;
+    box-shadow: 0px 4px 4px 0px rgba(black, 0.5);
+
+    color: $white;
+    @include font($openSans, $regular, 24px);
+}
+
 form#contact-form {
     div.input-container {
         margin-top: 8px;
@@ -8,9 +39,6 @@ form#contact-form {
         display: block;
     }
     input, textarea {
-        &:focus {
-            outline: none;
-        }
 
         &#message-field {
             height: 178px;
@@ -25,35 +53,13 @@ form#contact-form {
         }
 
         width: 100%;
-        border-radius: 5px;
-        border: 0px;
-
-        color: $black;
-        background-color: $white;
-
-        box-shadow: inset 0px 4px 4px 0px rgba(black, 0.5);
-
-        display: block;
     }
     button {
-        &:focus {
-            box-shadow: none;
-        }
-
         width: 131px;
         height: 57px;
 
         margin-top: 39px;
         align-self: center;
-
-        border: none;
-        border-radius: 5px;
-
-        background-color: $green;
-        box-shadow: 0px 4px 4px 0px rgba(black, 0.5);
-
-        color: $white;
-        @include font($openSans, $regular, 24px);
     }
 
     width: calc(100vw - 40px);
@@ -62,4 +68,28 @@ form#contact-form {
 
     display: flex;
     flex-direction: column;
+}
+
+form#comment-form {
+    textarea {
+        width: 100%;
+        min-height: 178px;
+    }
+
+    button {
+        height: 48px;
+        align-self: center;
+    }
+
+    #comment-input {
+        margin-right: 20px;
+
+        flex-basis: fill;
+        flex-grow: 1;
+    }
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
 }

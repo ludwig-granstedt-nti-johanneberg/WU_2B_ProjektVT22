@@ -36,7 +36,7 @@ h5 {
   font-size: 20px;
 }
 
-p, label, dd, dt, a {
+p, span, label, dd, dt, a {
   color: #fcfffc;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -384,6 +384,32 @@ article.school > * {
     flex-direction: row;
   }
 }
+input, textarea {
+  border-radius: 5px;
+  border: 0px;
+  color: #040f0f;
+  background-color: #fcfffc;
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  display: block;
+}
+input:focus, textarea:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: #2ba84a;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  color: #fcfffc;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+button:focus {
+  box-shadow: none;
+}
+
 form#contact-form {
   width: calc(100vw - 40px);
   margin-top: 39px;
@@ -399,15 +425,6 @@ form#contact-form label {
 }
 form#contact-form input, form#contact-form textarea {
   width: 100%;
-  border-radius: 5px;
-  border: 0px;
-  color: #040f0f;
-  background-color: #fcfffc;
-  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
-  display: block;
-}
-form#contact-form input:focus, form#contact-form textarea:focus {
-  outline: none;
 }
 form#contact-form input#message-field, form#contact-form textarea#message-field {
   height: 178px;
@@ -423,17 +440,25 @@ form#contact-form button {
   height: 57px;
   margin-top: 39px;
   align-self: center;
-  border: none;
-  border-radius: 5px;
-  background-color: #2ba84a;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
-  color: #fcfffc;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
 }
-form#contact-form button:focus {
-  box-shadow: none;
+
+form#comment-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+form#comment-form textarea {
+  width: 100%;
+  min-height: 178px;
+}
+form#comment-form button {
+  height: 48px;
+  align-self: center;
+}
+form#comment-form #comment-input {
+  margin-right: 20px;
+  flex-basis: fill;
+  flex-grow: 1;
 }
 
 main#contact-main section {
@@ -463,6 +488,27 @@ main#contact-main section#contact-me p {
   width: calc(100vw - 40px);
   margin-top: 8px;
   align-self: center;
+}
+main#contact-main section#comments {
+  padding: 20px;
+  max-width: 716px;
+}
+main#contact-main section#comments .comment {
+  min-height: 58px;
+  margin-bottom: 20px;
+}
+main#contact-main section#comments .comment img.profile-picture {
+  width: 50px;
+  height: 50px;
+  margin: 8px 8px 0px 0px;
+  float: left;
+  box-shadow: none;
+}
+main#contact-main section#comments .comment .username {
+  font-weight: 600;
+}
+main#contact-main section#comments .comment .comment-text {
+  font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -514,7 +560,7 @@ main#contact-main section#contact-me p {
   main#contact-main {
     padding-left: 400px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }

@@ -34,4 +34,33 @@ main#contact-main {
         display: flex;
         flex-direction: column;
     }
+    
+    section#comments {
+        .comment {
+            img.profile-picture {
+                width: 50px;
+                height: 50px;
+
+                margin: 8px 8px 0px 0px;
+
+                float: left;
+
+                box-shadow: none;
+            }
+
+            .username {
+                font-weight: 600;
+            }
+
+            .comment-text {
+                font-size: 16px;
+            }
+
+            min-height: 58px;
+            margin-bottom: 20px;
+        }
+
+        padding: 20px;
+        max-width: 676px + 20px * 2;
+    }
 }
